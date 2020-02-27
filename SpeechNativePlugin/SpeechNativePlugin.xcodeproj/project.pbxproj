@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		437646D82407C19100B1AA25 /* SpeechNativePlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 437646D72407C19100B1AA25 /* SpeechNativePlugin.mm */; };
-		437646D92407C19100B1AA25 /* SpeechNativePlugin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 437646D62407C19100B1AA25 /* SpeechNativePlugin.h */; };
+		437646D92407C19100B1AA25 /* SpeechNativePlugin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 437646D62407C19100B1AA25 /* SpeechNativePlugin.h */; };
 		437646E12407C32300B1AA25 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437646E02407C32300B1AA25 /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		437646D12407C19100B1AA25 /* CopyFiles */ = {
+		437646D12407C19100B1AA25 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				437646D92407C19100B1AA25 /* SpeechNativePlugin.h in CopyFiles */,
+				437646D92407C19100B1AA25 /* SpeechNativePlugin.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -87,7 +88,8 @@
 			buildPhases = (
 				437646CF2407C19100B1AA25 /* Sources */,
 				437646D02407C19100B1AA25 /* Frameworks */,
-				437646D12407C19100B1AA25 /* CopyFiles */,
+				437646D12407C19100B1AA25 /* Copy Files */,
+				437646E32407E0E900B1AA25 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +131,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437646E32407E0E900B1AA25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\npwd\necho cp libSpeechNativePlugin.a ../SpeechUnityDemo/Assets/Plugins/iOS\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		437646CF2407C19100B1AA25 /* Sources */ = {
